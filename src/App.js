@@ -21,7 +21,7 @@ const App = () => {
     console.log('start');
     setTimer( setInterval( () => {
       setTime( prevValue => prevValue + 1);
-    },1000));
+    },1));
   };
 
   const stop = e => {
