@@ -21,12 +21,12 @@ const App = () => {
     console.log('start');
     setTimer( setInterval( () => {
       setTime( prevValue => prevValue + 1);
-    }),1);
+    },1000));
   };
 
   const stop = e => {
     e.preventDefault();
-    console.log('stp[');
+    console.log('stop');
     clearInterval(timer);
   };
 
