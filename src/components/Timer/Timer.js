@@ -9,9 +9,10 @@ const Timer = ({ time }) => {
       Math.floor((time / (1000 * 60 * 60)) % 24)
     ];
     
-    hh = (hh < 10 ? '0' + hh: hh);
-    mm = (mm < 10 ? '0' + mm: mm);
-    ss = (ss < 10 ? '0' + ss: ss);
+    hh = (hh < 10 ? '0' + hh : hh);
+    mm = (mm < 10 ? '0' + mm : mm);
+    ss = (ss < 10 ? '0' + ss : ss);
+    ms = ms/10;
     return(
       hh + ':' + mm + ':' + ss + '.' + ms
     );

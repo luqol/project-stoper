@@ -20,8 +20,8 @@ const App = () => {
     e.preventDefault();
     console.log('start');
     setTimer( setInterval( () => {
-      setTime( prevValue => prevValue + 1);
-    },1));
+      setTime( prevValue => prevValue + 10);
+    },10));
   };
 
   const stop = e => {
